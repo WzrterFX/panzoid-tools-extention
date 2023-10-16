@@ -1,0 +1,269 @@
+body {
+	background: #1e1e1e;
+}
+
+/* Кнопка темы */
+#themeButton {
+	position: absolute;
+	cursor: pointer;
+
+	right: 5px;
+	top: 5px;
+
+	width: 32px;
+    height: 32px;
+
+	border: none;
+	background-color: transparent;
+	color: transparent;
+
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+#themeButton:after {
+	content: "L";
+
+    font-family: "icons";
+	font-size: 24px;
+    color: #d9d9d9;
+   	font-weight: 900;
+}
+
+/* Лого */
+.logo {
+    width: 300px;
+    height: 32px;
+
+	margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+	font-family: "gilroy";
+	font-size: 44px;
+    color: #d9d9d9;
+
+	text-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+
+	transition: 0.8s;
+}
+
+.logo:hover {
+	text-shadow: 0 0 20px rgba(255, 255, 255, 0.45);
+
+	transform: scale(1.035);
+}
+
+/* Поиск */
+.search-field {
+	width: 300px;
+	height: 16px;
+	padding: 8px;
+
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	margin-bottom: 6px;
+
+	font-family: "gilroy";
+	font-size: 18px;
+	color: #d9d9d9;
+	text-decoration: none;
+
+	background-image: linear-gradient(to right, #1e1e1e 0%, #272727 100%);
+	background-size: 125% auto;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+	transition: 0.8s;
+}
+
+.search-field:focus {
+	background-position: right center;
+	box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+
+	transform: scale(1.035);
+}
+
+/* Кнопка */
+.active-button {
+	cursor: pointer;
+
+	width: 317px;
+	padding: 6px;
+
+	border: none;
+	border-radius: 6px;
+	margin-bottom: 6px;
+
+	background-image: linear-gradient(to right, #0f0c29 0%, #302b63 25%, #24243e 100%);
+	background-size: 150% auto;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+
+	font-family: "gilroy";
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+
+	transition: 0.5s;
+ 	animation: none;
+}
+
+.active-button:hover {
+ 	animation: glowButton 1s infinite;
+
+	background-position: right center;
+	box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+
+	transform: scale(1.025);
+}
+
+.active-button:active {
+	transform: scale(0.95);
+}
+
+@keyframes glowButton {
+	0% {
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+	}
+	50% {
+		text-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+	}
+	100% {
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+	}
+}
+
+/* Группа */
+.group-name {
+	position: relative;
+	cursor: pointer;
+
+	width: 309px;
+	height: 25px;
+	padding: 4px;
+
+	border: none;
+	border-radius: 6px;
+	margin-bottom: 6px;
+
+	background-image: linear-gradient(to right, #1e1e1e 0%, #272727 100%);
+	background-size: 125% auto;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.035);
+
+	font-family: "gilroy";
+	font-size: 18px;
+    color: #d9d9d9;
+	text-decoration: none;
+
+	transition: 0.8s;
+ 	animation: none;
+}
+
+.group-name:after {
+	position: absolute;
+
+	content: "F";
+
+	transform: translateY(-50%);
+	padding: 10px;
+	right: 0;
+	top: 50%;
+
+    font-family: "icons";
+	font-size: 24px;
+    color: #d9d9d9;
+   	font-weight: 900;
+}
+
+.group-name:hover {
+ 	animation: glowGroup 1s infinite;
+
+	background-position: right center;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+
+	transform: scale(1.025);
+}
+
+.group-name:active {	
+	transform: scale(0.95);
+}
+
+@keyframes glowGroup {
+	0% {
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	}
+	50% {
+		text-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+	}
+	100% {
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	}
+}
+
+/* Под группа */
+.sub-group-name {
+	position: relative;
+	cursor: pointer;
+
+	width: 309px;
+	height: 25px;
+	padding: 4px;
+
+	border: none;
+	border-radius: 6px;
+	margin-bottom: 6px;
+
+	background-image: linear-gradient(to right, #1e1e1e 0%, #272727 100%);
+	background-size: 125% auto;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.035);
+
+	font-family: "gilroy";
+	font-size: 18px;
+    color: #d9d9d9;
+	text-decoration: none;
+
+	transition: 0.8s;
+}
+
+.sub-group-name:after {
+	position: absolute;
+
+	content: "f";
+
+	transform: translateY(-50%);
+	padding: 10px;
+	right: 0;
+	top: 50%;
+
+    font-family: "icons";
+	font-size: 24px;
+    color: #d9d9d9;
+   	font-weight: 900;
+}
+
+.sub-group-name:hover {
+	background-position: right center;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+
+	transform: scale(1.025);
+}
+
+.sub-group-name:active {
+	transform: scale(0.95);
+}
+
+/* Внутриность папки */
+.group-content {
+	display: none;
+
+    animation: fade 0.75s ease;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+    100% {
+    	opacity: 1;
+    }
+}

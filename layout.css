@@ -1,0 +1,22 @@
+/* Шрифты */
+@font-face {
+	font-family: "icons";
+	src: url("./source/fonts/icons.ttf") format("truetype");
+} 
+
+@font-face {
+	font-family: "gilroy";
+	src: url("./source/fonts/gilroy.ttf") format("truetype");
+} 
+
+/* Инструменты */
+::-webkit-scrollbar {
+	display: none;
+}
+
+.no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
