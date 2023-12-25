@@ -1,17 +1,15 @@
 ﻿var groupTitles = document.querySelectorAll(".group-name, .sub-group-name");
 
 groupTitles.forEach(function(groupTitle) {
-    groupTitle.addEventListener("click", function()
-    {
+
+    groupTitle.addEventListener("click", function() {
         var groupContent = this.nextElementSibling;
 
-        if (groupContent.style.display === "block")
-        {
+        if (groupContent.style.display === "block") {
             groupContent.style.display = "none";
             localStorage.setItem(groupTitle.textContent, "closed");
         }
-        else
-        {
+        else {
             groupContent.style.display = "block";
             localStorage.setItem(groupTitle.textContent, "open");
         }
@@ -20,10 +18,9 @@ groupTitles.forEach(function(groupTitle) {
     var groupContent = groupTitle.nextElementSibling;
     var savedState = localStorage.getItem(groupTitle.textContent);
 
-    if (savedState === "closed") {
+    if (savedState === "closed")
         groupContent.style.display = "none";
-    } 
-    else if (savedState === "open") {
+
+    else if (savedState === "open")
         groupContent.style.display = "block";
-    }
 });

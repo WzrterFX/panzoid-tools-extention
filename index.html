@@ -1,90 +1,87 @@
 <!DOCTYPE html>
 
 <Panzoid+>
-<! -- Окошко --> 
-<body class = "no-select">
+<! -- panzoid+ --> 
+<body class="no-select">
 
-    <! -- Лого --> 
-    <h1 class = "logo">Panzoid+</h1>
-    
-    <! -- Кнопка темы --> 
-    <button id = "themeButton"></button>
+    <!-- tools -->
+    <h1 class="logo">Panzoid+</h1>
+    <button id="theme-button"></button>
+    <input type="text" maxlength="32" class="search-field" placeholder="Search">
 
-    <! -- Поиск--> 
-    <input type = "text" maxlength = "32" class = "search-field" placeholder = "Search">
+    <!-- shaders -->
+    <div class="group-name">Shaders</div>
+    <div class="group-content">
 
-    <! -- Шейдеры --> 
-    <div class = "group-name">Shaders</div>
-        <div class = "group-content">
+        <!-- stylization -->
+        <div class="sub-group-name">Stylization</div>
+        <div class="group-content">
+            <button type="button" id="cartoon" class="active-button">Cartoon</button>
+            <button type="button" id="glitch" class="active-button">Glitch</button>
+            <button type="button" id="halftone" class="active-button">Halftone</button>
+            <button type="button" id="innerShadow" class="active-button">Inner shadow</button>
+            <button type="button" id="toon" class="active-button">Toon</button>
+        </div>
 
-            <! -- Группа -->   
-            <div class = "sub-group-name">Stylization</div>
-                <div class = "group-content">
-                    <button type = "button" id = "cartoon" class = "active-button">Cartoon</button>
-                    <button type = "button" id = "glitch" class = "active-button">Glitch</button>
-                    <button type = "button" id = "innerShadow" class = "active-button">Inner Shadow</button>
-                    <button type = "button" id = "toon" class = "active-button">Toon</button>
-            </div>
+        <!-- color -->
+        <div class="sub-group-name">Color</div>
+        <div class="group-content">
+            <button type="button" id="colorExpansion" class="active-button">Color expansion</button>
+            <button type="button" id="colorisma" class="active-button">Colorisma</button>
+            <button type="button" id="invertChannel" class="active-button">Invert channel</button>
+            <button type="button" id="leaveColor" class="active-button">Leave color</button>
+            <button type="button" id="tint" class="active-button">Tint</button>
+        </div>
 
-            <! -- Группа -->
-            <div class = "sub-group-name">Color</div>
-                <div class = "group-content">
-                    <button type = "button" id = "colorExpansion" class = "active-button">Color expansion</button>
-                    <button type = "button" id = "colorisma" class = "active-button">Colorisma</button>
-                    <button type = "button" id = "tint" class = "active-button">Tint</button>
-                    <button type = "button" id = "leaveColor" class = "active-button">Leave color</button>
-            </div>
+        <!-- image -->
+        <div class="sub-group-name">Image</div>
+        <div class="group-content">
+            <button type="button" id="edgeBlur" class="active-button">Edge blur</button>
+            <button type="button" id="ghost" class="active-button">Ghost</button>
+            <button type="button" id="motionBlur" class="active-button">Motion blur</button>
+            <button type="button" id="shine" class="active-button">Shine</button>
+            <button type="button" id="vignette" class="active-button">Vignette</button>
+        </div>
 
-            <! -- Группа --> 
-            <div class = "sub-group-name">Image</div>
-                <div class = "group-content">
-                    <button type = "button" id = "ghost" class = "active-button">Ghost</button>
-                    <button type = "button" id = "mirror" class = "active-button">Mirror</button>
-                    <button type = "button" id = "stroke" class = "active-button">Stroke</button>
-                    <button type = "button" id = "venetianBlinds" class = "active-button">Venetian blinds</button>
-                    <button type = "button" id = "vignette" class = "active-button">Vignette</button>
-            </div>
-
-            <! -- Группа --> 
-            <div class = "sub-group-name">Deformation</div>
-                <div class = "group-content">
-                    <button type = "button" id = "edgeBlur" class = "active-button">Edge Blur</button>
-                    <button type = "button" id = "motionBlur" class = "active-button">Motion blur</button>
-                    <button type = "button" id = "shine" class = "active-button">Shine</button>
-                    <button type = "button" id = "turbulentDisplace" class="active-button">Turbulent displace</button>
-                    <button type = "button" id = "warpWaves" class = "active-button">Warp waves</button>
-                    <button type = "button" id = "turbidity" class = "active-button">Turbidity</button>
-            </div>
+        <!-- deformation -->
+        <div class="sub-group-name">Deformation</div>
+        <div class="group-content">
+            <button type="button" id="mirror" class="active-button">Mirror</button>
+            <button type="button" id="stroke" class="active-button">Stroke</button>
+            <button type="button" id="turbulentDisplace" class="active-button">Turbulent displace</button>
+            <button type="button" id="turbidity" class="active-button">Turbidity</button>
+            <button type="button" id="venetianBlinds" class="active-button">Venetian blinds</button>
+            <button type="button" id="warpWaves" class="active-button">Warp waves</button>
+        </div>
     </div>
 
-    <! -- Пресеты --> 
-    <div class = "group-name">Presets</div>
-        <div class = "group-content">
+    <!-- presets -->
+    <div class="group-name">Presets</div>
+    <div class="group-content">
 
-            <! -- Группа -->
-            <div class = "sub-group-name">Shakes</div>
-                <div class = "group-content">
-                    <button type = "button" id = "leftRightShake" class = "active-button">Left right shake</button>
-                    <button type = "button" id = "rainbowShake" class = "active-button">Rainbow shake</button>
-                    <button type = "button" id = "wiggleShake" class = "active-button">Wiggle shake</button>
-                    <button type = "button" id = "smallShake" class= "active-button">Small shake</button>
-                    <button type = "button" id = "zoomShake" class = "active-button">Zoom shake</button>
-                    <button type = "button" id = "sharpShake" class = "active-button">Sharp shake</button>
-            </div>
+        <!-- shakes -->
+        <div class="sub-group-name">Shakes</div>
+        <div class="group-content">
+            <button type="button" id="leftRightShake" class="active-button">Left right shake</button>
+            <button type="button" id="rainbowShake" class="active-button">Rainbow shake</button>
+            <button type="button" id="wiggleShake" class="active-button">Wiggle shake</button>
+            <button type="button" id="smallShake" class="active-button">Small shake</button>
+            <button type="button" id="zoomShake" class="active-button">Zoom shake</button>
+            <button type="button" id="sharpShake" class="active-button">Sharp shake</button>
+        </div>
     </div>
 
 <head>
-    <! -- Стили --> 
+    <! -- css --> 
     <link rel = "stylesheet" href = "./layout.css">
-
-    <link id = "darkTheme" rel = "stylesheet", href = "./dark.css">
-    <link id = "lightTheme" rel = "stylesheet", href = "./light.css">
+    <link id = "dark-theme" rel = "stylesheet", href = "./dark.css">
+    <link id = "light-theme" rel = "stylesheet", href = "./light.css">
 </head>
 
 </body>
-    <! -- Скрипты --> 
+    <! -- java --> 
     <script src = "./java/theme.js"></script>
-    <script src = "./java/clipboard.js"></script>
     <script src = "./java/group.js"></script>
     <script src = "./java/search.js"></script>
+    <script src = "./java/clipboard.js"></script>
 </Panzoid+>

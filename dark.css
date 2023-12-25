@@ -2,8 +2,8 @@ body {
 	background: #1e1e1e;
 }
 
-/* Кнопка темы */
-#themeButton {
+/* theme button */
+#theme-button {
 	position: absolute;
 	cursor: pointer;
 
@@ -20,7 +20,7 @@ body {
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-#themeButton:after {
+#theme-button:after {
 	content: "L";
 
     font-family: "icons";
@@ -29,7 +29,7 @@ body {
    	font-weight: 900;
 }
 
-/* Лого */
+/* logo */
 .logo {
     width: 300px;
     height: 32px;
@@ -53,7 +53,7 @@ body {
 	transform: scale(1.035);
 }
 
-/* Поиск */
+/* search field */
 .search-field {
 	width: 300px;
 	height: 16px;
@@ -83,7 +83,7 @@ body {
 	transform: scale(1.035);
 }
 
-/* Кнопка */
+/* button */
 .active-button {
 	cursor: pointer;
 
@@ -109,7 +109,7 @@ body {
 }
 
 .active-button:hover {
- 	animation: glowButton 1s infinite;
+ 	animation: glow-button 1s infinite;
 
 	background-position: right center;
 	box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
@@ -121,19 +121,19 @@ body {
 	transform: scale(0.95);
 }
 
-@keyframes glowButton {
+@keyframes glow-button {
 	0% {
-		text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
 	}
 	50% {
-		text-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+		text-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
 	}
 	100% {
-		text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+		text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
 	}
 }
 
-/* Группа */
+/* group */
 .group-name {
 	position: relative;
 	cursor: pointer;
@@ -176,7 +176,7 @@ body {
 }
 
 .group-name:hover {
- 	animation: glowGroup 1s infinite;
+ 	animation: glow-group 1s infinite;
 
 	background-position: right center;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
@@ -188,7 +188,7 @@ body {
 	transform: scale(0.95);
 }
 
-@keyframes glowGroup {
+@keyframes glow-group {
 	0% {
 		text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 	}
@@ -200,7 +200,7 @@ body {
 	}
 }
 
-/* Под группа */
+/* sub group */
 .sub-group-name {
 	position: relative;
 	cursor: pointer;
@@ -252,7 +252,7 @@ body {
 	transform: scale(0.95);
 }
 
-/* Внутриность папки */
+/* group context */
 .group-content {
 	display: none;
 

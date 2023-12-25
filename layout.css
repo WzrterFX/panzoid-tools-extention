@@ -1,4 +1,4 @@
-/* Шрифты */
+/* fonts */
 @font-face {
 	font-family: "icons";
 	src: url("./source/fonts/icons.ttf") format("truetype");
@@ -9,7 +9,7 @@
 	src: url("./source/fonts/gilroy.ttf") format("truetype");
 } 
 
-/* Инструменты */
+/* tools */
 ::-webkit-scrollbar {
 	display: none;
 }
