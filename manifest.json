@@ -1,12 +1,12 @@
 {
     "manifest_version": 3,
     
-    "version_name": "1.6 release",
-    "version": "1.6",
+    "version_name": "1.7 release",
+    "version": "1.7",
 
     "name": "Panzoid+",
     "short_name": "Pz+",
-    "description": "Browser extension specifically for the Clipmaker 3. You can add new effects to your project using the power of GLSL language shaders",
+    "description": "Browser extension specifically for the Clipmaker 3. You can add new effects to your project using the new shaders",
     "author": "WzrterFX",
 
     "icons": {
